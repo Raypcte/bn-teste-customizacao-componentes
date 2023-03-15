@@ -29,6 +29,16 @@ body {
   list-style: none;
   width: 100%;
 }
+@media (min-width: 0px) and (max-width: 414px) {
+  .beon-showcase__head-inner {
+    justify-content: center;
+  }
+}
+@media (min-width: 0px) and (max-width: 414px) {
+  .beon-showcase__head-inner a {
+    display: none !important;
+  }
+}
 
 .beon-showcase__title {
   background-color: #FFFFFF !important;
@@ -203,4 +213,11 @@ body {
   font-size: 18px !important;
   color: #FFFFFF !important;
   margin: 5px;
+}
+
+@media (min-width: 0px) and (max-width: 414px) {
+  .beon-slider {
+    padding: 0 !important;
+    height: 100vh;
+  }
 }/*# sourceMappingURL=main.css.map */

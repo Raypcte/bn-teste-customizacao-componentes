@@ -4,3 +4,9 @@
   font-size: $size !important;
   color: $color !important;
 }
+
+@mixin iphonex {
+  @media (min-width: 0px) and (max-width: 414px) {
+    @content;
+  }
+}
