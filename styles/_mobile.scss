@@ -3,15 +3,31 @@
     padding: 0 !important;
     height: 100vh;
     max-width: 414px !important;
-    width: 100%;
-    background-color: blue;
+    overflow-x: hidden;
+  }
+}
+
+.tns-controls {
+  @include iphonex {
+    max-width: 300px !important;
+    display: flex;
+
+    button:first-child {
+      margin: 300px 0px;
+    }
+
+    button:last-child {
+      position: absolute;
+      left: 0;
+      margin: 300px 330px;
+    }
   }
 }
 
 .tns-nav {
   @include iphonex {
-    background-color: red;
     max-width: 300px;
-    // margin: auto;
+    position: absolute;
+    left: 40px;
   }
 }

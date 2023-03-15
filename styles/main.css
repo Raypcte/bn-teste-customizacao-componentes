@@ -220,14 +220,29 @@ body {
     padding: 0 !important;
     height: 100vh;
     max-width: 414px !important;
-    width: 100%;
-    background-color: blue;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 414px) {
+  .tns-controls {
+    max-width: 300px !important;
+    display: flex;
+  }
+  .tns-controls button:first-child {
+    margin: 300px 0px;
+  }
+  .tns-controls button:last-child {
+    position: absolute;
+    left: 0;
+    margin: 300px 330px;
   }
 }
 
 @media (min-width: 0px) and (max-width: 414px) {
   .tns-nav {
-    background-color: red;
     max-width: 300px;
+    position: absolute;
+    left: 40px;
   }
 }/*# sourceMappingURL=main.css.map */
