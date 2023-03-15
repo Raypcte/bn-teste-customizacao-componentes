@@ -22,40 +22,6 @@ body {
   border: 1px solid $secondary;
 }
 
-.beon-showcase__head-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  width: 100%;
-
-  @include iphonex {
-    justify-content: center;
-  }
-
-  a {
-    @include iphonex {
-      display: none !important;
-    }
-  }
-}
-
-.beon-showcase__title {
-  background-color: $pure-white !important;
-
-  span {
-    @include formatText(700, 16px, $secondary);
-  }
-}
-
-.beon-showcase__viewmore {
-  background-color: $pure-white !important;
-
-  span {
-    @include formatText(700, 16px, $secondary);
-  }
-}
-
 .beon-slider .beon-slider__slides .beon-slider__slide {
   padding: 0 !important;
 }
@@ -64,71 +30,13 @@ body {
   margin: 0 !important;
 }
 
-.beon-slider__slide {
-  max-width: 260px;
-  max-height: 520px;
-  background-color: $pure-white;
-  margin: 35px 40px;
-  border-radius: 5px;
-  border: 1px solid $low-opacity;
-  width: 100%;
-
-  div {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-    .beon-showcase__item-image {
-      max-width: 218px;
-      max-height: 309px;
-      margin: auto;
-    }
-
-    .beon-showcase__item-title {
-      @include formatText(600, 14px, $title);
-      position: relative;
-      top: 335px;
-    }
-  }
-}
-
 .beon-showcase__item-references {
   display: none !important;
-}
-
-.beon-showcase__item-description {
-  div {
-    min-height: 105px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: end;
-    align-items: start;
-  }
 }
 
 .beon-showcase .beon-showcase__item-price--to .beon-showcase__price,
 .beon-showcase .beon-showcase__item-price-box--simple .beon-showcase__price {
   @include formatText(700, 22px, $secondary);
-}
-
-.beon-showcase__item-price--from {
-  width: 100%;
-  margin-top: 50px;
-
-  span {
-    @include formatText(400, 12px, $low-opacity);
-    text-align: left;
-  }
-
-  .prefix {
-    text-decoration: line-through;
-  }
-
-  .beon-showcase__price span {
-    text-decoration: line-through;
-  }
 }
 
 .beon-showcase__item-price--to .prefix {
@@ -150,28 +58,6 @@ body {
   display: none;
 }
 
-.beon-showcase__item-actions {
-  a {
-    border-radius: 0 0 5px 5px !important;
-    background-color: $primary;
-
-    span {
-      width: 100%;
-      color: $secondary;
-    }
-  }
-
-  a:hover {
-    border-radius: 0 0 5px 5px !important;
-    background-color: $secondary;
-
-    span {
-      width: 100%;
-      color: $pure-white;
-    }
-  }
-}
-
 .beon-showcase__item-discount .currency {
   display: none !important;
 }
@@ -183,53 +69,3 @@ body {
 .beon-showcase__item-badge--off-value {
   display: none !important;
 }
-
-.beon-showcase__item-badge {
-  background-color: $secondary !important;
-  padding: 12px !important;
-  border-radius: 50%;
-  width: 55px;
-  height: 55px;
-  margin: 0 195px;
-
-  span {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .beon-showcase__item-discount {
-    @include formatText(700, 18px, $pure-white);
-  }
-
-  .null {
-    @include formatText(400, 18px, $pure-white);
-    margin: 5px;
-  }
-}
-
-.beon-slider {
-  @include iphonex {
-    padding: 0 !important;
-    height: 100vh;
-  }
-}
-
-// #tns1 {
-  // max-width: 100%;
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
-
-  // div {
-      // max-width: 100%;
-      // width: 50vw;
-      // height: auto;
-      // margin: 10px;
-
-      // @include iphonex {
-      //   width: 90vw;
-      // }
-  // }
-// }

@@ -1,0 +1,17 @@
+.beon-slider {
+  @include iphonex {
+    padding: 0 !important;
+    height: 100vh;
+    max-width: 414px !important;
+    width: 100%;
+    background-color: blue;
+  }
+}
+
+.tns-nav {
+  @include iphonex {
+    background-color: red;
+    max-width: 300px;
+    // margin: auto;
+  }
+}
